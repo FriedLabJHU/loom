@@ -13,6 +13,7 @@ dependencies = [
 [project.scripts]
 length_filter = "modules.length_filter:main"
 build_consensus = "modules.build_consensus:main"
+alphafold_input_parser = "modules.alphafold_input_parser:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
