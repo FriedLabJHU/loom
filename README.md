@@ -58,6 +58,14 @@ If you installed with `sudo make install`, you can remove `loom` and its complet
 
 Alternatively, just delete `loom` and its completion files if you installed it manually.
 
+# Additional Tools
+
+Included in this repository is a convenience helper for using loom with AlphaFold3. The `alphafold_input_parser.py` script parses a file in FASTA format into the JSON input format expected by AlphaFold3. It supports the following options for configuration:
+
+- --version: The ALphaFold output format version you want to use.
+- --dialect: 'alphafold3' or 'alphafoldserver' the AlphaFold dialect you want to use.
+- --seed: A seed to enable reproducible results from AlphaFold.
+
 # Bug Reports and Feature Requests
 
 If you discover a bug or find an area where a feature is lacking, check the Github issues, and if one doesn't exist already, go ahead and open one.
