@@ -62,9 +62,11 @@ Alternatively, just delete `loom` and its completion files if you installed it m
 
 Included in this repository is a convenience helper for using loom with AlphaFold3. The `alphafold_input_parser.py` script parses a file in FASTA format into the JSON input format expected by AlphaFold3. It supports the following options for configuration:
 
-- --version: The ALphaFold output format version you want to use.
-- --dialect: 'alphafold3' or 'alphafoldserver' the AlphaFold dialect you want to use.
-- --seed: A seed to enable reproducible results from AlphaFold.
+- --input: The FASTA file to be converted to AlphaFold3 input format.
+- --output: The JSON file to be created. (Defaults to {INPUT_FILE}.json).
+- --version: The ALphaFold output format version you want to use. (Defaults to 4).
+- --dialect: 'alphafold3' or 'alphafoldserver' the AlphaFold dialect you want to use. (Defaults to 'alphafold3' unless multiple input sequences are detected).
+- --seed: A seed to enable reproducible results from AlphaFold. (Defaults to 42).
 
 # Bug Reports and Feature Requests
 
